@@ -295,7 +295,7 @@ for i in range(new_height):
         gray = int(0.2126*r + 0.7152*g + 0.0722*b)
         index = int(gray/255 * (char_len-1))
         if chars[index] == "/":
-            ascii_img += "\033[31m/\033[0m" # changer la couleur du caractère en rouge
+            ascii_img += "\033[31m/\033[0m"
         else:
             ascii_img += chars[index]
     ascii_img += "\n"
